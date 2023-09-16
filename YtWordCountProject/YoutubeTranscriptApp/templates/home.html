@@ -1,0 +1,9 @@
+{% if word_count %}
+{{word_count}}
+{% endif %}
+<form action="" method="POST">
+    {% csrf_token %}
+<input type="text" name="yt_url"  placeholder="Provide the link to the youtube id">
+<input type="text" name="query"  placeholder=" word to be queried">
+<input type="submit">
+</form>
